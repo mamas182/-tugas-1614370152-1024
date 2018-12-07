@@ -21,6 +21,5 @@ orangtua(siti, basir).
 
 
 anak(X,Y):-orangtua(Y,X).  
-
-
+orangtua(X, Y):-orangtua(X, Y),wanita(X).
 nenek(X,Z):-orangtua(X,Y),orangtua(Y,Z),wanita(X).
